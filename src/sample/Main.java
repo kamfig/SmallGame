@@ -64,8 +64,11 @@ public class Main extends Application implements EventHandler<ActionEvent> {
         Button button = (Button) event.getSource();
         if (counter % 2 == 0) {
             button.setText("X");
+            button.setStyle("-fx-background-color: #00ff00; -fx-font-size: 19");
         }else {
             button.setText("Y");
+            button.setStyle("-fx-font: 19 arial; -fx-base: #b6e7c9 ");
+            //button.setStyle("-fx-background-color: #0e4091");
         }
         button.setDisable(true);
         counter++;
